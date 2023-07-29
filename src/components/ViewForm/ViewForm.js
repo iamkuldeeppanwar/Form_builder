@@ -34,7 +34,7 @@ function ViewForm() {
     <div className="flex justify-center mt-5">
       <form
         onSubmit={saveForm}
-        className="w-3/6 p-3 bg-white border border-gray-200 rounded-lg shadow dark:border-gray-700"
+        className="w-5/6 p-3 bg-white border border-gray-200 rounded-lg shadow dark:border-gray-700"
       >
         <p className="font-normal text-center text-blue-500 text-[2rem]">
           {title}
