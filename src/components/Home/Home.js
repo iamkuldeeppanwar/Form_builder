@@ -12,7 +12,7 @@ function Home() {
 
   const formDatas = () => {
     axios
-      .get("http://localhost:8000/getForm")
+      .get("https://form-api-bafu.onrender.com/getForm")
       .then((data) => {
         setViewForm(data.data.formData);
       })
@@ -23,7 +23,7 @@ function Home() {
 
   const deleteForm = (id) => {
     axios
-      .delete(`http://localhost:8000/deleteForm/${id}`)
+      .delete(`https://form-api-bafu.onrender.com/deleteForm/${id}`)
       .then((data) => {
         window.alert("Form Deleted!");
         let temp = viewForm.filter((res) => {

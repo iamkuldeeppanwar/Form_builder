@@ -12,7 +12,7 @@ function Preview({ fields, title, setTitle, setFields, setPreview }) {
     }
     const body = { fields: temp, title };
     axios
-      .post("http://localhost:8000/forms", body)
+      .post("https://form-api-bafu.onrender.com/forms", body)
       .then((data) => {
         window.alert("Form Created Successfully!");
         setPreview(false);

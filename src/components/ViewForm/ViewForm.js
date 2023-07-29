@@ -14,7 +14,7 @@ function ViewForm() {
 
   const viewSaveForm = () => {
     axios
-      .get(`http://localhost:8000/getSingleForm/${params.id}`)
+      .get(`https://form-api-bafu.onrender.com/getSingleForm/${params.id}`)
       .then((data) => {
         setTitle(data.data.formData.title);
         setFields(data.data.formData.fields);
